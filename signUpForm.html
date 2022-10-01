@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="..\CSS\signUpForm.css">
+</head>
+
+<body>
+    
+    <div class="mainCon">
+    
+        <div class="heading">Sign Up</div>
+
+        <form action="" id="form">
+
+            <div class="inputField" oninput="userInput()">
+
+                <span id="username" class="placeHolder"></span> <br/>
+
+                <span id="userStatus" class="status"></span></br>
+                
+                <input id="user" class="input_field_style" type="text" placeholder="Username" required>      
+
+            </div>
+
+            <div class="inputField" oninput="gInput() ">
+
+                <span id="ePlaceholder" class="placeHolder" style="left: -8rem;"></span> <br/>
+
+                <span id="eStatus" class="status"></span></br>
+                
+                <input id="eMail" class="input_field_style" type="email" placeholder="Email" required>      
+
+            </div>
+
+            <div class="inputField" oninput="pInput()">
+
+                <span id="passPlaceholder" class="placeHolder"></span> <br/>
+
+                <span id="pStatus" class="status"></span></br>
+                
+                <input id="pass" class="input_field_style" type="password" placeholder="Password" required>      
+
+            </div>
+
+            <div class="inputField" oninput="cInput()">
+
+                <span id="conPlaceholder" class="placeHolder"></span> <br/>
+
+                <span id="cStatus" class="status"></span></br>
+                
+                <input id="cpass" class="input_field_style" type="password" placeholder="Confirm Password" required>      
+
+            </div>
+
+            <button id="signInBtn" class="btn">Sign Up</button>
+
+            <h4>Or sign up with social platforms</h4>
+
+            <div class="links">
+
+                <a href=""><img class="link" src="..\IMAGE\facebook.png" alt=""></a>
+
+                <a href=""><img class="link" src="..\IMAGE\whatsapp.png" alt=""></a>
+                
+                <a href=""><img class="link" src="..\IMAGE\instagram.png" alt=""></a>
+                
+                <a href=""><img class="link" src="..\IMAGE\twitter.png" alt=""></a>
+
+            </div>
+
+            <h4>Already have an account? <a href="">Sign in</a></h4>
+
+        </form>
+ 
+    </div>
+
+    <!-- input Count -->
+
+    <div>
+
+        <div id="uCount" class="countInput"></div>
+        <div id="pCount" class="countInput"></div>
+
+    </div>
+    
+    <div class="toggle">
+
+        <img style="width:70px" src="..\IMAGE\sunImage.jpeg" alt="Toggle Image">
+
+    </div>
+
+    <script src="..\JAVASCRIPT\signUpForm.js"></script>
+
+</body>
+
+</html>
